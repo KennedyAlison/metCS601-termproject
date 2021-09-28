@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Fenway Kenmore Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+  
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a class="active" href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Fenway Kenmore
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Fenway_Kenmore/Hojoko.jpg); background-size: 340px 100% "> 
+                <h2>#1 Hojoko</h2>
+                <span>Japanese</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Japanese, Cocktail Bar</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 2px;"><b>Tuesday - Saturday:</b></li>
+                      <li><i>5PM - 9PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-670-0507</i></li>
+                  <li><a href="https://www.hojokoboston.com/">Hojoko Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/hojoko-boston-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/hojoko-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=hojoko-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+            <header class="collapsible" style="background-image: url(../images/Fenway_Kenmore/Tiger.PNG); background-size: 625px 135% "> 
+                <h2>#2 Tiger Mama</h2>
+                <span>Asian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Thai, Vietnamese</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Wednesday-Thursday:</b></li>
+                      <li><i>4PM - 9PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                        <li><i>4PM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-425-6262</i></li>
+                  <li><a href="https://www.tigermamaboston.com/">Tiger Mama Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/tiger-mama-boston-3">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/tiger-mama-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=tiger-mama-boston,Boston, MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Fenway_Kenmore/EasternStandard.jpg); background-size: 210px 100% "> 
+                <h2>#3 Eastern Standard</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>American, Brunch</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 5px;"><b>Everyday:</b></li>
+                        <li><i>7AM - 2AM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-532-9100</i></li>
+                  <li><a href="https://easternstandardboston.com/">Eastern Standard Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/eastern-standard-kitchen-and-drinks-boston-3">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/eastern-standard-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=eastern-standard-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Fenway_Kenmore/SweetCheeks.jpg); background-size: 625px 120% "> 
+                <h2>#4 Sweet Cheeks Q</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 3px;" ><b>Barbeque, Southern</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul style="margin-bottom: 3px;">
+                      <li style="margin-bottom: 2px;"><b>Tuesday, Thursday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>4PM - 8PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Friday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>4PM - 9PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Saturday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>12PM - 9PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Sunday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>12PM - 8PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-266-1300</i></li>
+                  <li><a href="https://www.sweetcheeksq.com/">Sweet Cheeks Q Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/sweet-cheeks-q-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/sweet-cheeks-q-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=sweet-cheeks-q-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Fenway_Kenmore/Eventide.jpg); background-size: 285px 100% "> 
+                <h2>#5 Eventide Fenway</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Oyster Bar</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 2px;"><b>Monday, Thursday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>5PM - 9PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Friday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>5PM - 10PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Saturday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>12PM - 9PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Sunday:</b></li>
+                      <li style="margin-bottom: 2px;"><i>12PM - 8PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-545-1060</i></li>
+                  <li><a href="https://www.eventideoysterco.com/eventide-fenway">Eventide Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/eventide-fenway-boston-3">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=eventide-fenway,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>South End Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a class="active" href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in South End
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_End/Toro.jpg); background-position: 50% 40%; background-size: 1000px"> 
+                <h2>#1 Toro</h2>
+                <span>Spanish</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Tapas, Bar</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Sunday-Wednesday:</b></li>
+                      <li><i>5PM - 9PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                      <li><i>5PM - 9:30PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-536-4300</i></li>
+                  <li><a href="https://www.toro-restaurant.com/">Toro Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/toro-boston-2">Yelp Reviews</a></li>
+                  <li><a href="https://www.toro-restaurant.com/reservations"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=toro-boston-2,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+          <header class="collapsible" style="background-image: url(../images/South_End/Myers.PNG); background-position: 0% 50%; background-size: 315px"> 
+                <h2>#2 Myers & Chang</h2>
+                <span>Chinese</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Chinese, Asian Fusion</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Everyday:</b></li>
+                      <li><i>4PM - 9PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Brunch Saturday-Sunday:</b></li>
+                      <li><i>11AM - 3PM</i></li>
+                    </ul>
+                  </li> 
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-542-5200</i></li>
+                  <li><a href="https://www.myersandchang.com/">Myers and Chang Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/myers-and-chang-boston">Yelp Reviews</a></li>
+                  <li><a href="https://resy.com/cities/bos/myers-and-chang"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=myers-and-chang,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_End/SRV.jpg); background-position: 110% 25%; background-size: 625px"> 
+                <h2>#3 SRV</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Italian</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 5px;"><b>Wednesday-Sunday:</b></li>
+                        <li><i>5PM - 10PM</i></li>
+                        <li style="margin-bottom: 5px;"><b>Sunday Brunch:</b></li>
+                        <li><i>11AM - 3PM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-536-9500</i></li>
+                  <li><a href="http://srvboston.com/">SRV Bar Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/srv-boston-boston">Yelp Reviews</a></li>
+                  <li><a href="https://resy.com/cities/bos/srv"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=srv,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_End/beehive.jfif);background-position: 70% 35%; background-size: 685px"> 
+                <h2>#4 The Beehive</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 3px;" ><b>American, Brunch</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 2px;"><b>Tuesday-Friday:</b></li>
+                      <li><i>4:30PM - 9:30PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Saturday:</b></li>
+                      <li><i>10AM - 9:30PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Sunday:</b></li>
+                      <li><i>10AM - 3:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-423-0069</i></li>
+                  <li><a href="https://www.beehiveboston.com/">The Beehive Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/the-beehive-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/beehive-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=beehive-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_End/BandG.jpg);background-position: 50% 75%; background-size: 425px"> 
+                <h2>#5 B&G Oyster</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Wednesday-Sunday:</b></li>
+                      <li><i>12PM - 9PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-423-0550</i></li>
+                  <li><a href="http://bandgoysters.com/">B&G Oysters Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/b-and-g-oysters-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/b-and-g-oysters-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=bandgoysters,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

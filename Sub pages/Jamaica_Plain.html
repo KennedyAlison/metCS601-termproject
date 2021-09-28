@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Jamaica Plain Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a class="active" href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Jamaica Plain
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Jamaica_Plain/TenTables.jpg); background-size: 275px 100% "> 
+                <h2>#1 Ten Tables</h2>
+                <span>American</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>American</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 2px;"><b>Thursday - Sunday:</b></li>
+                      <li><i>5PM - 9PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-524-8810</i></li>
+                  <li><a href="https://www.tentables.net/">Ten Tables Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/ten-tables-jamaica-plain">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/ten-tables-jamaica-plain"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=ten-tables-jamaica-plain,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+            <header class="collapsible" style="background-image: url(../images/Jamaica_Plain/TresGatos.jpeg); background-size: 625px 135% "> 
+                <h2>#2 Tres Gatos</h2>
+                <span>Spanish</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Tapas</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Sunday-Thursday:</b></li>
+                      <li><i>5:30PM - 9PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                        <li><i>5:30PM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-477-4851</i></li>
+                  <li><a href="http://www.tresgatosjp.com/">Tres Gatos Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/tres-gatos-jamaica-plain">Yelp Reviews</a></li>
+                  <li><a href="http://www.tresgatosjp.com/reservations"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=tres-gatos-jamaica-plain,Boston, MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Jamaica_Plain/Haven.jfif); background-size: 315px 100% "> 
+                <h2>#3 The Haven</h2>
+                <span>Scottish</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Scottish, Gastropubs</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 5px;"><b>Sunday-Tuesday:</b></li>
+                        <li><i>4:30PM - 10PM</i></li>
+                        <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                        <li><i>4:30PM - 11PM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-524-2836</i></li>
+                  <li><a href="https://thehavenjp.com/">The Haven Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/the-haven-jamaica-plain">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/the-haven"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=the-haven-jamaica-plain,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Jamaica_Plain/BlueNile.jfif); background-size: 190px 100% "> 
+                <h2>#4 The Blue Nile</h2>
+                <span>Ethiopian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 3px;" ><b>Ethiopian</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Tuesday-Friday:</b></li>
+                      <li><i>4PM - 9:30PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                      <li><i>12PM - 9:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-522-6453</i></li>
+                  <li><a href="https://www.bluenileincjp.com/">The Blue Nile Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/blue-nile-restaurant-jamaica-plain">Yelp Reviews</a></li>
+                  <li><i>Call for Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=blue-nile-restaurant-jamaica-plain,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Jamaica_Plain/Brassica.jpg); background-size: 315px 105% "> 
+                <h2>#5 Brassica Kitchen + Cafe</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>American, Cafe</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Wednesday-Friday:</b></li>
+                      <li><i>7:30AM - 3PM, 5PM - 10PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Saturday-Sunday:</b></li>
+                      <li><i>10AM - 2PM, 5PM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-477-4519</i></li>
+                  <li><a href="https://www.brassicakitchen.com/">Brassica Kitchen + Cafe Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/brassica-kitchen-and-cafe-jamaica-plain">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/brassica-kitchen"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=brassica-kitchen-and-cafe-jamaica-plain,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

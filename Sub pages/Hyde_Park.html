@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Hyde Park Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>  
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+  
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a class="active" href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Hyde Park
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Hyde_Park/Antonios.jpg); background-size: 360px 100% "> 
+                <h2>#1 Antonio's Bacaro</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Italian</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 2px;"><b>Sunday - Wednesday:</b></li>
+                      <li><i>4:30PM - 8:30PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Thursday:</b></li>
+                      <li><i>4:30PM - 9PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Friday - Saturday:</b></li>
+                      <li><i>4:30PM - 9:30PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-272-3028</i></li>
+                  <li><a href="https://www.antoniosbacaro.com/">Antonio's Bacaro Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/antonios-bacaro-hyde-park">Yelp Reviews</a></li>
+                  <li><i>Call for Reservations</i></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=antonios-bacaro-hyde-park,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+            <header class="collapsible" style="background-image: url(../images/Hyde_Park/Rincon.jpg); background-size: 270px 100% "> 
+                <h2>#2 Rincon Caribeno</h2>
+                <span>Caribbean</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Dominican, Cocktail Bars</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Everyday:</b></li>
+                      <li><i>9AM - 1AM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-360-9775</i></li>
+                  <li><a href="https://www.rinconcaribeno.net/">Rincon Caribeno Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/rincon-caribeno-restaurant-hyde-park">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=rinconcaribeno-hyde-park,Boston, MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Hyde_Park/Zaz.jfif); background-size: 625px 130% "> 
+                <h2>#3 Zaz</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Barbeque</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 2px;"><b>Wednesday:</b></li>
+                        <li><i>5PM - 10PM</i></li>
+                        <li style="margin-bottom: 2px;"><b>Thursday-Friday:</b></li>
+                        <li><i>5PM - 10PM</i></li>
+                        <li style="margin-bottom: 2px;"><b>Saturday:</b></li>
+                        <li><i>12PM - 10PM</i></li>
+                        <li style="margin-bottom: 2px;"><b>Sunday:</b></li>
+                        <li><i>12PM - 7PM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-276-3729</i></li>
+                  <li><a href="https://www.zazrestaurant.com/">Zaz Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/zaz-hyde-park">Yelp Reviews</a></li>
+                  <li><i>Call for Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=zaz-hyde-park,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Hyde_Park/LaTacqueria.jpg); background-size: 325px 100% "> 
+                <h2>#4 La Taqueria</h2>
+                <span>Mexican</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Mexican</b></li>
+                  <li style="color: lightgray;"><b>$</b>$$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday - Saturday:</b></li>
+                      <li><i>11AM - 8:30PM</i></li>
+                      <li><b>Sunday:</b></li>
+                      <li><i>12PM - 8PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>781-686-9111</i></li>
+                  <li><a href="https://www.lataqueriaboston.com/">La Tacqueria Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/la-taqueria-taco-bar-and-grill-roslindale">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=lataqueriaboston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Hyde_Park/Asian\ Thai.jfif); background-size: 315px 100% "> 
+                <h2>#5 Asian Thai</h2>
+                <span>Thai</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Thai</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday - Thursday:</b></li>
+                      <li><i>11AM - 10PM</i></li>
+                      <li><b>Friday - Saturday:</b></li>
+                      <li><i>11AM - 11PM</i></li>
+                      <li><b>Sunday:</b></li>
+                      <li><i>12PM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-361-4448</i></li>
+                  <li><a href="https://www.asianthaieatery.com/">Asian Thai Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/asian-thai-restaurant-hyde-park">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=asian-thai-restaurant-hyde-park,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

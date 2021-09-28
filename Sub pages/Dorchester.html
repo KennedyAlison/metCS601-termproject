@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Dorchester Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a class="active" href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Dorchester
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Dorchester/224.jpeg); background-size: 475px 155% "> 
+                <h2>#1 224 Boston</h2>
+                <span>American</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>American</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Thursday:</b></li>
+                      <li><i>5PM - 10PM</i></li>
+                      <li style="margin-top: 2px;"><b>Friday-Saturday:</b></li>
+                      <li><i>12PM - 9:30PM</i></li>
+                      <li style="margin-top: 2px;"><b>Sunday:</b></li>
+                      <li><i>10AM - 3PM, 5PM - 10PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-265-1217</i></li>
+                  <li><a href="https://224boston.com/">224 Boston Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/224-boston-street-restaurant-dorchester?start=200">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/224-boston-street-tavern-and-restaurant-dorchester"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=224-boston-street-tavern-and-restaurant-dorchester,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+            <header class="collapsible" style="background-image: url(../images/Dorchester/dbar.jpg); background-size: 215px 110% "> 
+                <h2>#2 dbar</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Bar, Dance Club</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 0px;"><b>Tuesday-Friday:</b></li>
+                      <li><i>5PM - 8:30PM</i></li>
+                      <li style="margin-bottom: 0px;"><b>Saturday:</b></li>
+                      <li><i>4PM - 8:30PM</i></li>
+                      <li style="margin-bottom: 0px;"><b>Sunday:</b></li>
+                      <li><i>11AM - 3PM, 4:30PM - 7:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 0px;"><b><u>Phone</u></b></li>
+                  <li><i>617-265-4490</i></li>
+                  <li><a href="https://www.dbarboston.com/">dbar Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/dbar-dorchester">Yelp Reviews</a></li>
+                  <li><a href="https://www.yelp.com/biz/dbar-dorchester"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=dbar-dorchester,Boston, MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Dorchester/Ashmont.jpg); background-size: 320px 100% "> 
+                <h2>#3 Ashmont Grill</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>American, Wings</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 2px;"><b>Thursday-Monday:</b></li>
+                        <li><i>5PM - 10PM</i></li>
+                        <li style="margin-bottom: 2px;"><b>Sunday Brunch:</b></li>
+                        <li><i>11AM - 3PM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-825-4300</i></li>
+                  <li><a href="http://ashmontgrill.com/">Ashmont Grill Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/ashmont-grill-dorchester">Yelp Reviews</a></li>
+                  <li><i>Call for Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=ashmont-grill-dorchester,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Dorchester/Lucys.PNG); background-size: 225px 100% "> 
+                <h2>#4 Lucy's American Tavern</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>American, Brunch</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin: 2px;"><b>Monday-Friday:</b></li>
+                      <li><i>11:30AM - 9PM</i></li>
+                      <li style="margin: 2px;"><b>Saturday-Sunday:</b></li>
+                      <li><i>9AM - 3PM, 4PM - 9PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-326-6677</i></li>
+                  <li><a href="https://www.lucysamericantavern.com/">Lucy's American Tavern Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/lucys-american-tavern-dorchester">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/lucys-american-tavern-dorchester"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=lucys-american-tavern-dorchester,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Dorchester/dorset.jpg); background-size: 250px 100% "> 
+                <h2>#5 Dorset Hall</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>American, Wings</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Friday:</b></li>
+                      <li><i>11:30AM - 1AM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Saturday-Sunday:</b></li>
+                      <li><i>11AM - 1AM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-533-7114</i></li>
+                  <li><a href="http://dorsethall.com/">Dorset Hall Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/dorset-hall-boston-3">Yelp Reviews</a></li>
+                  <li><i>Call for Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=dorsethall-dorchester,BostonMA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

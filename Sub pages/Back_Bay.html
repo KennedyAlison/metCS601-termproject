@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Back Bay Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+
+      window.addEventListener("DOMContentLoaded", () => {
+
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+            for (i = 0; i < coll.length; i++){
+              var content = coll[i].nextElementSibling;
+              content.style.display = "flex";
+            }
+          });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a class= "active" href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Back Bay
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Back_Bay/Saltie\ Girl.jpg); background-size: 375px 100% "> 
+                <h2>#1 Saltie Girl</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Seafood, Wine & Coktail Bar</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Friday:</b></li>
+                      <li><i>11AM - 9PM</i></li>
+                      <li style="margin-top: 5px;"><b>Saturday-Sunday:</b></li>
+                      <li><i>10AM - 9PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-267-0691</i></li>
+                  <li><a href="https://www.saltiegirl.com/">Saltie Girl Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/saltie-girl-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.saltiegirl.com/#/form-reservations"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=saltiegirl,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Back_Bay/Select_Oyster.jpg); background-size: 275px 110% "> 
+                <h2>#2 Select Oyster Bar</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Seafood, Bar</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Everyday:</b></li>
+                      <li><i>11:30AM - 9PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>857-239-8064</i></li>
+                  <li><a href="http://www.selectboston.com/">Select Oyster Bar Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/select-oyster-bar-boston">Yelp Reviews</a></li>
+                  <li><a href="http://www.selectboston.com/reservations"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=select-oyster-bar-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Back_Bay/Mistral.png); background-size: 285px 100% "> 
+                <h2>#3 Mistral</h2>
+                <span>Mediterranean</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Mediterranean, French</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Sunday:</b></li>
+                      <li><i>5:30PM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-351-2618</i></li>
+                  <li><a href="https://mistralbistro.com/">Mistral Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/mistral-boston">Yelp Reviews</a></li>
+                  <li><a href=""><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=mistralbistro, Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Back_Bay/Friendly_Toast.png); background-size: 290px 110% "> 
+                <h2>#4 The Friendly Toast</h2>
+                <span>Brunch</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Breakfast and Brunch</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Wednesday:</b></li>
+                      <li><i>8AM - 3PM</i></li>
+                      <li style="margin-top: 5px;"><b>Thursday-Sunday:</b></li>
+                      <li><i>8AM - 8PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-456-7849</i></li>
+                  <li><a href="https://thefriendlytoast.com/location/back-bay-boston/">The Friendly Toast Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/lulus-allston-boston-4">Yelp Reviews</a></li>
+                  <li><a href="https://www.yelp.com/waitlist/the-friendly-toast-back-bay?party_size=2&utm_medium=waitlist_widget&utm_source=biz_details"><i>Join the Waitlist</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=thefriendlytoast, Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Back_Bay/Ostra.jpg); background-size: 315px 105% "> 
+                <h2>#5 Ostra</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$$$</b></li>
+                  <li>
+                    <ul>
+                      <li><b>Tuesday-Saturday:</b></li>
+                      <li><i>5:30PM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>857-233-5533</i></li>
+                  <li><a href="http://ostraboston.com/">Ostra Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/ostra-boston">Yelp Reviews</a></li>
+                  <li><a href="https://ostraboston.com/reservations"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=ostraboston, Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

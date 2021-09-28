@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>North End Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a class="active" href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in North End
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/North_End/Neptune.jpg); background-position: center; background-size: 1350px"> 
+                <h2>#1 Neptune Oyster</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Monday - Friday:</b></li>
+                      <li><i>11AM - 9:30PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Saturday - Sunday:</b></li>
+                      <li><i>11AM - 10:30PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-742-3474</i></li>
+                  <li><a href="https://www.neptuneoyster.com/">Neptune Oyster Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/neptune-oyster-boston">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=neptune-oyster-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+          <header class="collapsible" style="background-image: url(../images/North_End/Arya.jpeg); background-position: 40% 35%; background-size: 625px"> 
+                <h2>#2 Arya Trattoria</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Italian</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Tuesday-Thursday:</b></li>
+                      <li><i>3PM - 8PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                        <li><i>3PM - 9PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-742-1276</i></li>
+                  <li><a href="http://aryatrattoria.com/">Arya Trattoria Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/arya-trattoria-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/arya-trattoria-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=arya-trattoria-boston,Boston, MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/North_End/Carmelinas.jpg); background-position: center; background-size: 625px"> 
+                <h2>#3 Carmelina's</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Italian</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 5px;"><b>Everyday:</b></li>
+                        <li><i>12PM - 10PM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-742-0020</i></li>
+                  <li><a href="https://carmelinasboston.com/">Carmelina's Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/carmelinas-boston-2">Yelp Reviews</a></li>
+                  <li><a href="https://www.yelp.com/biz/carmelinas-boston-2"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=carmelinas-boston-2,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/North_End/DailyCatch.jpg);background-position: center; background-size: 625px"> 
+                <h2>#4 The Daily Catch</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 3px;" ><b>Seafood, Italian</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Wednesday-Sunday:</b></li>
+                      <li><i>12PM - 9PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-523-8567</i></li>
+                  <li><a href="https://thedailycatch.com/">The Daily Catch Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/the-daily-catch-boston">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=the-daily-catch-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/North_End/Giacomos.jpg);background-position: 60% 65%; background-size: 680px"> 
+                <h2>#5 Giacomo's</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Italian, Wine Bar</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Sunday-Thursday:</b></li>
+                      <li><i>12PM - 10PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                      <li><i>12PM - 10:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-523-9026</i></li>
+                  <li><a href="https://www.tavernoftales.com/">Giacomo's Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/giacomos-ristorante-boston-boston">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=giacomos-ristorante-boston-north-end,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

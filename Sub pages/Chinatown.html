@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Chinatown Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+
+      window.addEventListener("DOMContentLoaded", () => {
+
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+            for (i = 0; i < coll.length; i++){
+              var content = coll[i].nextElementSibling;
+              content.style.display = "flex";
+            }
+          });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a class="active" href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Chinatown
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Chinatown/Dumpling.jpg); background-size: 350px 100% "> 
+                <h2>#1 Gourmet Dumpling House</h2>
+                <span>Chinese</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Dumplings</b></li>
+                  <li style="color: lightgray;"><b>$</b>$$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Everyday:</b></li>
+                      <li><i>11AM - 1AM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-338-6223</i></li>
+                  <li><a href="http://www.gourmetdumplinghouse.com/">Gourmet Dumpling House Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/gourmet-dumpling-house-boston-3">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=gourmetdumplinghouse,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+            <header class="collapsible" style="background-image: url(../images/Chinatown/Shojo.PNG); background-size: 215px 110% "> 
+                <h2>#2 Shojo</h2>
+                <span>Asian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Asian Fusion</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Tuesday-Thursday:</b></li>
+                      <li><i>4PM - 9:30PM</i></li>
+                      <li style="margin-top: 5px;"><b>Friday-Saturday:</b></li>
+                      <li><i>12PM - 9:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-423-7888</i></li>
+                  <li><a href="https://www.shojoboston.com/">Shojo Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/shojo-boston-4">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=shojoboston,Boston, MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Chinatown/ChinaPearl.jpg); background-size: 280px 100% "> 
+                <h2>#3 China Pearl</h2>
+                <span>Chinese</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Dim Sum, Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Tuesday, <br>Thursday-Sunday:</b></li>
+                      <li><i>10AM - 4PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-426-4338</i></li>
+                  <li><a href="https://www.chinapearlrestaurants.com/">China Pearl Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/china-pearl-restaurant-boston">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=china-pearl-chinatown,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Chinatown/Shabu\ Zen.jpg); background-size: 625px 138% "> 
+                <h2>#4 Shabu Zen</h2>
+                <span>Japanese</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Hot Pot</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin: 0px;"><b>Monday-Wednesday:</b></li>
+                      <li style="margin: 0px;"><i>11AM - 11PM</i></li>
+                      <li style="margin: 0px;"><b>Thursday, Sunday:</b></li>
+                      <li style="margin: 0px;"><i>11AM - 12AM</i></li>
+                      <li style="margin: 0px;"><b>Friday-Saturday:</b></li>
+                      <li style="margin: 0px;"><i>11AM - 1AM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-292-8828</i></li>
+                  <li><a href="https://www.shabuzen.com/">Shabu Zen Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/shabu-zen-boston">Yelp Reviews</a></li>
+                  <li><i>Call for Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=shabu-zen-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Chinatown/Q.PNG); background-size: 210px 100% "> 
+                <h2>#5 Q Restaurant</h2>
+                <span>Chinese</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Sushi, Hot Pot</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Sunday-Thursday:</b></li>
+                      <li><i>11:30AM - 10PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Friday-Saturday:</b></li>
+                      <li><i>11:30AM - 11PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>857-350-3968</i></li>
+                  <li><a href="https://thequsa.com/">Q Restaurant Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/q-restaurant-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.yelp.com/biz/q-restaurant-boston">No Reservations, Yelp Waitlist</a></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=q-restaurant-boston,BostonMA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

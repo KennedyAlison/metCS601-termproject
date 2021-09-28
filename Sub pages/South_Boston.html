@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>South Boston Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a class="active" href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in South Boston
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_Boston/Fox.jpg); background-position: 50% 40%; background-size: 650px"> 
+                <h2>#1 Fox and the Knife</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Italian, Wine Bar</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Everyday:</b></li>
+                      <li><i>4:30PM - 10:30PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-766-8630</i></li>
+                  <li><a href="https://www.foxandtheknife.com/">Fox & the Knife Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/fox-and-the-knife-boston">Yelp Reviews</a></li>
+                  <li><a href="https://resy.com/cities/bos/fox-and-the-knife"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=fox-and-the-knife-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+          <header class="collapsible" style="background-image: url(../images/South_Boston/Lincoln.jpg); background-position: 0% 0%; background-size: 625px"> 
+                <h2>#2 Lincoln Tavern</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>American, Brunch</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 2px;"><b>Monday-Wednesday:</b></li>
+                      <li><i>10AM - 11PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Thursday-Friday:</b></li>
+                      <li><i>10AM - 1AM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Saturday:</b></li>
+                      <li><i>9AM - 1AM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Sunday:</b></li>
+                      <li><i>9AM - 11PM</i></li>
+                    </ul>
+                  </li> 
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-765-8636</i></li>
+                  <li><a href="https://www.lincolnsouthboston.com/">Lincoln Tavern Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/lincoln-tavern-and-restaurant-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/lincoln-tavern-and-restaurant"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=lincoln-tavern-and-restaurant,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_Boston/Loco.jpg); background-position: 110% 60%; background-size: 395px"> 
+                <h2>#3 Loco Taqueria & Oyster Bar</h2>
+                <span>Mexican</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Mexican, Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 5px;"><b>Monday-Friday:</b></li>
+                        <li><i>5PM - 1AM</i></li>
+                        <li style="margin-bottom: 5px;"><b>Saturday-Sunday:</b></li>
+                        <li><i>10AM - 1AM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-917-5626</i></li>
+                  <li><a href="https://locosouthboston.com/">Loco Taqueria & Oyster Bar Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/loco-taqueria-and-oyster-bar-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/loco-taqueria-and-oyster-bar"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=loco-taqueria-and-oyster-bar,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_Boston/Committee.PNG);background-position: 60% 80%; background-size: 255px"> 
+                <h2>#4 Committee</h2>
+                <span>Greek</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 3px;" ><b>Mediterranean, Cocktail Bar</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Tuesday-Friday:</b></li>
+                      <li><i>5PM - 10PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Saturday-Sunday:</b></li>
+                      <li><i>10AM - 3PM, 5PM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-737-5051</i></li>
+                  <li><a href="https://committeeboston.com/">Committee Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/committee-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/committee"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=committee,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/South_Boston/Capo3.PNG);background-position: center; background-size: 625px"> 
+                <h2>#5 Capo Restaurant</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Italian, Bar</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 2px;"><b>Monday-Thursday:</b></li>
+                      <li><i>4PM - 10PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Friday:</b></li>
+                      <li><i>12PM - 11PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Saturday:</b></li>
+                      <li><i>11AM - 11PM</i></li>
+                      <li style="margin-bottom: 2px;"><b>Sunday:</b></li>
+                      <li><i>11AM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-993-8080</i></li>
+                  <li><a href="https://www.caposouthboston.com/">Capo Restaurant Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/capo-restaurant-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/capo-restaurant"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=capo-restaurant,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

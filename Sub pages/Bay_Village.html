@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Bay Village Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+
+      window.addEventListener("DOMContentLoaded", () => {
+
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a class= "active" href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Bay Village
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Bay_Village/MikeandPattys.jpg); background-size: 275px 100% "> 
+                <h2>#1 Mike and Patty's</h2>
+                <span>American</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Sandwiches, Brunch</b></li>
+                  <li style="color: lightgray;"><b>$</b>$$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Tuesday:</b></li>
+                      <li><i>8AM - 2PM</i></li>
+                      <li style="margin-top: 5px;"><b>Wednesday-Friday:</b></li>
+                      <li><i>7:30AM - 2PM</i></li>
+                      <li style="margin-top: 5px;"><b>Saturday-Sunday:</b></li>
+                      <li><i>7:30AM - 2:30PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-423-3447</i></li>
+                  <li><a href="https://mikeandpattys.com/">Mike and Patty's Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/mike-and-pattys-boston">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=mikeandpattys,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Bay_Village/Purple_Shell.jpg); background-size: 315px 110% "> 
+                <h2>#2 Purple Shell</h2>
+                <span>Japanese</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Sushi, Cocktail Bar</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Tuesday-Thursday:</b></li>
+                      <li><i>1:30PM - 9:30PM</i></li>
+                      <li style="margin-top: 5px;"><b>Friday-Sunday:</b></li>
+                      <li><i>12PM - 9:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-989-9982</i></li>
+                  <li><a href="https://purpleshellboston.com/">Purple Shell Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/purple-shell-boston">Yelp Reviews</a></li>
+                  <li><a href="https://purpleshellboston.com/"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=purpleshellboston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Bay_Village/Abby_Lane.jpg); background-size: 245px 100% "> 
+                <h2>#3 Abby Lane</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>American</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Everyday:</b></li>
+                      <li><i>11:30AM - 9:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-451-2229</i></li>
+                  <li><a href="https://www.abbylaneboston.com/">Abby Lane Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/abby-lane-boston-6">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/abby-lane"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=abby-lane, Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Bay_Village/Basile.jpg); background-size: 315px 100% "> 
+                <h2>#4 Basile</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Italian</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Saturday:</b></li>
+                      <li><i>5PM - 11PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-350-0007</i></li>
+                  <li><a href="https://basileboston.com/">Basile Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/basile-fine-italian-kitchen-boston">Yelp Reviews</a></li>
+                  <li><a href="https://basileboston.com/make-a-reservation/"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=basileboston, Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Bay_Village/Mooncusser.jpg); background-size: 235px 105% "> 
+                <h2>#5 Mooncusser Fish House</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 2px;"><b>Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Everyday:</b></li>
+                      <li><i>11AM - 8PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-917-5193</i></li>
+                  <li><a href="https://www.mooncusserfishhouse.com/">Mooncusser Fish House Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/mooncusser-fish-house-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/mooncusser-fish-house-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=mooncusserfishhouse, Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

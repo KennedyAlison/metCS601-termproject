@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"> -->
+    <link rel="stylesheet" href="styles/main_stylesheet.css"/>
+    <style>
+    </style>
+    <script>
+      var restaurants = [
+        'Lone Star Taco Bar - Allston', 'Coreanos - Allston', 'Glenville Stops - Allston', 'Lulu\'s Allston - Allston', 'Carlo\'s Cucina Italiana - Allston',
+        'Saltie Girl - Back Bay', 'Select Oyster Bar - Back Bay', 'Mistral - Back Bay', 'The Friendly Toast - Back Bay', 'Ostra - Back Bay',
+        'Mike and Patty\'s - Bay Village', 'Purple Shell - Bay Village', 'Abby Lane - Bay Village', 'Basile - Bay Village', 'Mooncusser Fish House - Bay Village',
+        '75 Chestnut - Beacon Hill', 'Grotto - Beacon Hill', 'Toscano - Beacon Hill', 'Emmets - Beacon Hill', 'No. 9 Park - Beacon Hill',
+        'Stockyard - Brighton', 'Brighton Bodega - Brighton', 'Tasca - Brighton', 'Devlin\'s - Brighton', 'Darbar - Brighton',
+        'Brewer\'s Fork - Charlestown', 'Warren Tavern - Charlestown', 'Pier 6 - Charlestown', 'Monument - Charlestown', 'Blackmoor - Charlestown',
+        'Gourmet Dumpling House - Chinatown', 'Shojo - Chinatown', 'China Pearl - Chinatown', 'Shabu Zen - Chinatown', 'Q Restaurant - Chinatown',
+        '224 Boston - Dorchester', 'dbar - Dorchester', 'Ashmont Grill - Dorchester', 'Lucy\'s American Tavern - Dorchester', 'Dorset Hall - Dorchester',
+        'Yvonne\'s - Downtown', 'Marliave - Downtown', 'O Ya - Downtown', 'Teatro - Downtown', 'Union Oyster House - Downtown',
+        'Rino\'s Place - East Boston', 'Rincon Limeño - East Boston', 'Santarpio\'s Pizza - East Boston', 'KO Pies at the Shipyard - East Boston', 'ReelHouse - East Boston',
+        'Hojoko - Fenway Kenmore', 'Tiger Mama - Fenway Kenmore', 'Eastern Standard - Fenway Kenmore', 'Sweet Cheeks Q - Fenway Kenmore', 'Eventide Fenway - Fenway Kenmore',
+        'Antonio\'s Bacaro - Hyde Park', 'Rincon Caribeno - Hyde Park', 'Zaz - Hyde Park', 'La Tacqueria - Hyde Park', 'Asian Thai - Hyde Park', 
+        'Ten Tables - Jamaica Plain', 'Tres Gatos - Jamaica Plain', 'The Haven - Jamaica Plain', 'The Blue Nile - Jamaica Plain', 'Brassica Kitchen + Cafe - Jamaica Plain',
+        'Flames Restaurant - Mattapan', 'Ali\'s Roti Restaurant - Mattapan', 'Pit Stop Barbecue - Mattapan', 'The Bowery Bar - Mattapan', 'Steel and Rye - Mattapan',
+        'Milkweed - Mission Hill', 'The Mission - Mission Hill', 'Laughing Monk Cafe - Mission Hill', 'Flann O\'Brien\'s - Mission Hill', 'Tavern of Tales - Mission Hill',
+        'Neptune Oyster - North End', 'Arya Trattoria - North End', 'Carmelina\'s - North End', 'The Daily Catch - North End', 'Giacomo\'s - North End',
+        'Delfino - Roslindale', 'Sophia\'s Grotto - Roslindale', '753 South - Roslindale', 'Birch Street Bistro - Roslindale', 'Shanti - Roslindale',
+        'Mida - Roxbury', 'Merengue Restaurant - Roxbury', 'Slade\'s Bar and Grill - Roxbury', 'Doña Habana - Roxbury', 'Soleil - Roxbury', 
+        'Fox and the Knife - South Boston', 'Lincoln Tavern - South Boston', 'Loco Taqueria & Oyster Bar - South Boston', 'Committee - South Boston', 'Capo Restaurant - South Boston',
+        'Toro - South End', 'Myers & Chang - South End', 'SRV - South End', 'The Beehive - South End', 'B&G Oyster - South End',
+        'Scampo - West End', 'CLINK - West End', 'Alcove - West End', 'Ward 8 - West End', 'The Harp - West End',
+        'West On Centre - West Roxbury', 'Al Wadi - West Roxbury', 'Rox Diner - West Roxbury', 'Porter Cafe - West Roxbury', 'Viva Mi Arepa - West Roxbury',
+        'Chart House - Wharf District', 'Legal Seafood - Wharf District', 'Pasta Beach - Wharf District', 'State Street Provisions - Wharf District', 'Rowes Wharf Sea Grille - Wharf District'
+      ];
+
+      var cuisines = {
+        "American": '- Glenville Stops - Allston \n - Lulu\'s Allston - Allston \n - The Friendly Toast - Back Bay \n -'
+        + ' Mike and Patty\'s - Bay Village \n - Abby Lane - Bay Village \n - 75 Chestnut - Beacon Hill \n - Stockyard - Brighton \n -'
+        + ' Brighton Bodega - Brighton \n - Devlin\'s - Brighton \n - Brewer\'s Fork - Charlestown \n - Warren Tavern - Charlestown \n -'
+        + ' Monument - Charlestown \n - Blackmoor - Charlestown \n - 224 Boston - Dorchester \n - dbar - Dorchester \n - Ashmont Grill - Dorchester \n -'
+        + ' Lucy\'s American Tavern - Dorchester \n - Dorset Hall - Dorchester \n - Yvonne\'s - Downtown \n - Santarpio\'s Pizza - East Boston \n -'
+        + ' Eastern Standard - Fenway Kenmore \n - Sweet Cheeks Q - Fenway Kenmore \n - Zaz - Hyde Park \n - Ten Tables - Jamaica Plain \n -'
+        + ' Brassica Kitchen + Cafe - Jamaica Plain \n - Pit Stop Barbecue - Mattapan \n - The Bowery Bar - Mattapan \n - Steel and Rye - Mattapan \n -'
+        + ' Milkweed - Mission Hill \n - The Mission - Mission Hill \n - Tavern of Tales - Mission Hill \n - 753 South - Roslindale \n -'
+        + ' Birch Street Bistro - Roslindale \n - Slade\'s Bar and Grill - Roxbury \n - Soleil - Roxbury \n - Lincoln Tavern - South Boston \n -'
+        + ' The Beehive - South End \n - CLINK - West End \n - Alcove - West End \n - Ward 8 - West End \n - The Harp - West End \n -'
+        + ' West On Centre - West Roxbury \n - Rox Diner - West Roxbury \n - Porter Cafe - West Roxbury \n - State Street Provisions - Wharf District',
+        "Mexican": '- Lone Star Taco Bar - Allston \n - La Tacqueria - Hyde Park \n - Loco Taqueria & Oyster Bar - South Boston',
+        "Korean": '- Coreanos - Allston',
+        "Italian": '- Carlo\'s Cucina Italiana - Allston\n - Basile - Bay Village \n - Grotto - Beacon Hill \n - Toscano - Beacon Hill \n -'
+        + ' Teatro - Downtown \n - Rino\'s Place - East Boston \n - Antonio\'s Bacaro - Hyde Park \n - Arya Trattoria - North End \n - '
+        + ' Carmelina\'s - North End \n - Giacomo\'s - North End \n - Delfino - Roslindale \n - Sophia\'s Grotto - Roslindale \n - Mida - Roxbury \n -'
+        + ' Fox and the Knife - South Boston \n - Capo Restaurant - South Boston \n - SRV - South End \n - Scampo - West End \n - Pasta Beach - Wharf District',
+        "Thai": '- Asian Thai - Hyde Park \n - Laughing Monk Cafe - Mission Hill',
+        "Lebanese": '- Al Wadi - West Roxbury',
+        "Caribbean": '- Rincon Caribeno - Hyde Park \n - Flames Restaurant - Mattapan \n - Ali\'s Roti Restaurant - Mattapan',
+        "Ethiopian": '- The Blue Nile - Jamaica Plain',
+        "Scottish": '- The Haven - Jamaica Plain',
+        "Australian": '- KO Pies at the Shipyard - East Boston',
+        "Japanese": '- Purple Shell - Bay Village \n - Shabu Zen - Chinatown \n - O Ya - Downtown \n - Hojoko - Fenway Kenmore',
+        "Chinese": '- Gourmet Dumpling House - Chinatown \n - China Pearl - Chinatown \n - Q Restaurant - Chinatown \n - Myers & Chang - South End',
+        "Indian": '- Darbar - Brighton \n - Shanti - Roslindale',
+        "Spanish": '- Tasca - Brighton \n - Rincon Limeño - East Boston \n - Tres Gatos - Jamaica Plain \n - Merengue Restaurant - Roxbury \n -'
+        + ' Doña Habana - Roxbury \n - Toro - South End \n - Viva Mi Arepa - West Roxbury',
+        "French": '- No. 9 Park - Beacon Hill \n - Marliave - Downtown',
+        "Irish": '- Emmets - Beacon Hill \n - Flann O\'Brien\'s - Mission Hill',
+        "Mediterranean": '- Mistral - Back Bay \n - Committee - South Boston',
+        "Seafood": '- Saltie Girl - Back Bay \n - Select Oyster Bar - Back Bay \n - Ostra - Back Bay \n - Mooncusser Fish House - Bay Village \n -'
+        + ' Pier 6 - Charlestown \n - Union Oyster House - Downtown \n - ReelHouse - East Boston \n - Eventide Fenway - Fenway Kenmore \n -'
+        + ' Neptune Oyster - North End \n - The Daily Catch - North End \n - B&G Oyster - South End \n - Chart House - Wharf District \n -'
+        + ' Legal Seafood - Wharf District \n - Rowes Wharf Sea Grille - Wharf District',
+        "Asian Fusion": '- Shojo - Chinatown \n - Tiger Mama - Fenway Kenmore' 
+      }
+
+      function getRandomRestaurant () {
+          return getNextRestaurant();
+      }
+
+      function getNextRestaurant(){
+          var randomNum = Math.floor(Math.random() * (restaurants.length));
+          return restaurants[randomNum];
+      }
+
+      function imageToMap(img, map, button){
+        if (img.style.display === "flex") {
+          img.style.display = "none";
+          map.style.display = "flex"
+          button.innerText = "Neighborhood Image"
+        } else {
+          img.style.display = "flex";
+          map.style.display = "none"
+          button.innerText = "Interactive Map"
+        }
+      }
+
+      function viewSources(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+
+      function updateBottomDiv(){
+        document.querySelector("[class$=select]").innerText = '';
+        document.querySelector("[class$=select]").style.marginTop = 0;
+        document.querySelector("[class$=select]").style.marginLeft = 0;
+      }
+
+      window.addEventListener("DOMContentLoaded", event => {
+        document.querySelector("[class$=button1]").addEventListener("click", event => {
+          document.querySelector("p").innerText = getRandomRestaurant();
+        });
+
+        map = document.getElementById("homepage_map")
+        img = document.getElementById("map_img")
+        button = document.querySelector("[class$=button3]")
+
+        document.getElementById("map_img").addEventListener("click", event => {
+          imageToMap(img, map, button);
+        });
+
+        document.querySelector("[class$=button3]").addEventListener("click", event => {
+          imageToMap(img, map, button);
+        });
+
+        document.querySelector("[class$=sources]").addEventListener("click", event => {
+          viewSources(document.querySelector("[class$=source_list]"));
+        });
+
+        document.querySelector("[type$=button3]").addEventListener("click", event => {
+          num = document.getElementById("mySelect")
+          if(num.selectedIndex == 0){
+            document.querySelector("[class$=cuisine]").innerText = "Please select a cuisine"
+            document.querySelector("[class$=cuisine2]").innerText = '';
+            updateBottomDiv();
+          } else if(num.selectedIndex == 1){
+            first = cuisines[num.options[num.selectedIndex].text].substring(0, 666);
+            last = cuisines[num.options[num.selectedIndex].text].substring(666, 2000);
+            document.querySelector("[class$=cuisine]").innerText = first;
+            document.querySelector("[class$=cuisine2]").innerText = last;
+            updateBottomDiv();
+          } else {
+            document.querySelector("[class$=cuisine]").innerText = cuisines[num.options[num.selectedIndex].text]
+            document.querySelector("[class$=cuisine2]").innerText = '';
+            updateBottomDiv();
+          }
+        });
+
+        document.querySelector("[class$=select]").addEventListener("mouseover", event => {
+          document.querySelector("[class$=mySelect]").style.background = "#d1f7f7";
+          setTimeout(function(){document.querySelector("[class$=mySelect]").style.background = "white";; }, 1000);
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a class="active" href="Homepage.html">Home</a></li>
+            <li class="item"><a href="Sub pages/Allston.html">Allston</a></li>
+            <li class="item"><a href="Sub pages/Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Sub pages/Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Sub pages/Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Sub pages/Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Sub pages/Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Sub pages/Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Sub pages/Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Sub pages/Downtown.html">Downtown</a></li>
+            <li class="item"><a href="Sub pages/East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Sub pages/Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Sub pages/Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Sub pages/Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Sub pages/Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Sub pages/Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="Sub pages/North_End.html">North End</a></li>
+            <li class="item"><a href="Sub pages/Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Sub pages/Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="Sub pages/South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="Sub pages/South_End.html">South End</a></li>
+            <li class="item"><a href="Sub pages/West_End.html">West End</a></li>
+            <li class="item"><a href="Sub pages/West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Sub pages/Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Every Boston Neighborhood</h1>
+
+          <div class="flex-grid">
+            <div style="border: 2px solid #b2d8d8">
+              <h2>5 Best Restaurants in all 23 Boston Neighborhoods</h2>
+              <div class="intro">
+                <video autoplay muted loop>
+                    <source src="images/pizza.mp4" type="video/mp4">
+                      I'm sorry, your browser does not support MP4 videos
+                </video>
+                Explore the unique cuisines throughout all 23 neighborhoods in Boston
+              </div>
+            </div>
+            
+            <div style="border: 2px solid #b2d8d8">
+              <img style="display: flex;" id="map_img" src="images/Boston Neightborhoods.jpg"/>
+              <iframe id="homepage_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=Boston,MA" allowfullscreen>
+                </iframe>
+              <button type="button" class="button3">Interactive Map</button>
+            </div>
+          </div>
+
+
+          <div class="flex-grid">
+            <div style="border: 2px solid #b2d8d8"> 
+              <h2>By Cuisine</h2>
+              Recommendations by Cuisine:
+              <select id="mySelect" class="mySelect">
+                <option value="0">Select cuisine:</option>
+                <option value="1">American</option>
+                <option value="2">Asian Fusion</option>
+                <option value="3">Australian</option>
+                <option value="4">Caribbean</option>
+                <option value="5">Chinese</option>
+                <option value="6">Ethiopian</option>
+                <option value="7">French</option>
+                <option value="8">Indian</option>
+                <option value="9">Irish</option>
+                <option value="10">Italian</option>
+                <option value="11">Japanese</option>
+                <option value="12">Korean</option>
+                <option value="13">Lebanese</option>
+                <option value="14">Mediterranean</option>
+                <option value="15">Mexican</option>
+                <option value="16">Scottish</option>
+                <option value="17">Seafood</option>
+                <option value="18">Spanish</option>
+              </select>
+              <button type="button3">Go</button>
+              <div style="display: flex; justify-content: space-around; margin-top:3vh">
+                <div class="cuisine"></div>
+                <div class="cuisine2"></div>
+                <div class="select">  Select a cuisine from the menu above </div>
+              </div>                 
+            </div>
+          </div>
+
+          <div class="flex-grid">
+            <div style="border: 2px solid #b2d8d8">
+              <div>
+                <h2>Random Restaurant</h2>
+                <div class="rand_rest">
+                  Don't know what restaurant you want to eat at? Click the button below to get a randomly generate restaurant in Boston
+                </div>
+                <div style="display: flex; align-items: center;">
+                  <button type="button" class="button1">Random Restaurant</button>
+                </div>
+              </div>
+              <br>
+              <p class="rand_p"></p>
+              <br>
+              <br>
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div style="border: 2px solid #b2d8d8">
+              <h2>Sources</h2>
+                <div class="sources">
+                  Click here to view all sources referenced for this website
+                </div>
+              <br>
+              <br>
+              <div class="source_list">
+                <ul>
+                  <li><a href="https://www.boston.com/food/restaurants/2019/01/09/the-ultimate-boston-neighborhood-restaurant-guide">Boston.com</a></li>
+                  <li><a href="https://boston.eater.com/maps/best-restaurants-boston-38">Boston Eater</a></li>
+                  <li><a href="https://www.bostonmagazine.com/restaurants/best-restaurants-in-boston">Boston Magazine</a></li>
+                  <li><a href="https://www.timeout.com/boston/restaurants/best-restaurants-in-boston">TimeOut</a></li>
+                  <li><a href="https://www.yelp.com/">Yelp</a></li>
+                  <li><a href="https://www.boston.gov/neighborhoods">Boston.gov</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

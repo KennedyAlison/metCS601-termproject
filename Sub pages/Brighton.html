@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Brighton Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+
+      window.addEventListener("DOMContentLoaded", () => {
+
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a class= "active" href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Brighton
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Brighton/Stockyard.jpg); background-size: 335px 100% "> 
+                <h2>#1 Stockyard</h2>
+                <span>American</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Steakhouse, Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li><b>Monday-Thursday:</b></li>
+                      <li><i>3PM - 9PM</i></li>
+                      <li style="margin-top: 5px;"><b>Friday-Sunday:</b></li>
+                      <li><i>12PM - 9PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-782-4700</i></li>
+                  <li><a href="https://www.stockyardrestaurant.com/">Stockyard Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/stockyard-restaurant-brighton-3">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/stockyard-classic-american-tavern-brighton"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=stockyardrestaurant,Brighton,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+            <header class="collapsible" style="background-image: url(../images/Brighton/BrightonBodega.jpg); background-size: 635px 175% "> 
+                <h2>#2 Brighton Bodega</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Small Plates, Cocktail Bar</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Everyday:</b></li>
+                      <li><i>4:30PM - 1AM</i></li>
+                      <li style="margin-top: 5px;"><b>Brunch Saturday-Sunday:</b></li>
+                      <li><i>10:30AM - 3PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-208-8698</i></li>
+                  <li><a href="http://www.brightonbodega.com/">Brighton Bodega Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/brighton-bodega-boston">Yelp Reviews</a></li>
+                  <li><a href="http://www.brightonbodega.com/reservations"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=brightonbodega,Brighton,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Brighton/Tasca.jpg); background-size: 315px 115% "> 
+                <h2>#3 Tasca</h2>
+                <span>Spanish</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Tapas</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Everyday:</b></li>
+                      <li><i>4PM - 9:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-730-8002</i></li>
+                  <li><a href="https://www.tascatapasrestaurant.com/">Tasca Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/tasca-restaurant-brighton-5">Yelp Reviews</a></li>
+                  <li><a href="https://www.yelp.com/biz/tasca-restaurant-brighton-5"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=tascatapasrestaurant,Brighton,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Brighton/Devlins.jfif); background-size: 245px 100% "> 
+                <h2>#4 Devlin's</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li style="margin-bottom: 0px;"><b>American, Cocktail</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin: 0px;"><b>Monday-Wednesday:</b></li>
+                      <li style="margin: 0px;"><i>11:30AM - 10PM</i></li>
+                      <li style="margin: 0px;"><b>Thursday-Friday:</b></li>
+                      <li style="margin: 0px;"><i>11:30AM - 11PM</i></li>
+                      <li style="margin: 0px;"><b>Saturday:</b></li>
+                      <li style="margin: 0px;"><i>10AM - 11PM</i></li>
+                      <li style="margin: 0px;"><b>Sunday:</b></li>
+                      <li style="margin: 0px;"><i>10AM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 0px;"><b><u>Phone</u></b></li>
+                  <li><i>617-779-8822</i></li>
+                  <li><a href="https://www.edevlins.com/">Devlin's Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/devlins-brighton">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/devlins-restaurant"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=devlins-restaurant,Brighton,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Brighton/Darbar.jpg); background-size: 315px 102% "> 
+                <h2>#5 Darbar</h2>
+                <span>Indian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Halal, Indian</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li><b>Sunday-Thursday:</b></li>
+                      <li><i>11:30AM - 9PM</i></li>
+                      <li style="margin-top: 5px;"><b>Friday-Saturday:</b></li>
+                      <li><i>11:30AM - 10PM</i></li>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-779-8800</i></li>
+                  <li><a href="https://www.darbarbrighton.com/">Darbar Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/darbar-boston">Yelp Reviews</a></li>
+                  <li><i>No Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=darbar,Brighton,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <title>Wharf District Top Restaurants</title>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/main_stylesheet.css"/>
+    <script>
+
+      function collapse(content){
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      }
+      
+  
+      window.addEventListener("DOMContentLoaded", () => {
+  
+        var coll = document.getElementsByClassName("collapsible")
+
+        document.querySelector("[type$=button2]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "flex";
+          }
+        });
+
+        document.querySelector("[type$=button]").addEventListener("click", event => {
+          for (i = 0; i < coll.length; i++){
+            var content = coll[i].nextElementSibling;
+            content.style.display = "none";
+          }
+        });
+  
+        coll[0].addEventListener("click", event => {          
+          var content = coll[0].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[1].addEventListener("click", event => {          
+          var content = coll[1].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[2].addEventListener("click", event => {          
+          var content = coll[2].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[3].addEventListener("click", event => {          
+          var content = coll[3].nextElementSibling;
+          collapse(content);
+        });
+  
+        coll[4].addEventListener("click", event => {          
+          var content = coll[4].nextElementSibling;
+          collapse(content);
+        });
+  
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav>
+          <ul>
+            <li><span>Navigation</span></li>
+            <li class="item"><a href="../Homepage.html">Home</a></li>
+            <li class="item"><a href="Allston.html">Allston</a></li>
+            <li class="item"><a href="Back_Bay.html">Back Bay</a></li>
+            <li class="item"><a href="Bay_Village.html">Bay Village</a></li>
+            <li class="item"><a href="Beacon_Hill.html">Beacon Hill</a></li>
+            <li class="item"><a href="Brighton.html">Brighton</a></li>
+            <li class="item"><a href="Charlestown.html">Charlestown</a></li>
+            <li class="item"><a href="Chinatown.html">Chinatown</a></li>
+            <li class="item"><a href="Dorchester.html">Dorchester</a></li>
+            <li class="item"><a href="Downtown.html">Downtown</a></li>
+            <li class="item"><a href="East_Boston.html">East Boston</a></li>
+            <li class="item"><a href="Fenway_Kenmore.html">Fenway Kenmore</a></li>
+            <li class="item"><a href="Hyde_Park.html">Hyde Park</a></li>
+            <li class="item"><a href="Jamaica_Plain.html">Jamaica Plain</a></li>
+            <li class="item"><a href="Mattapan.html">Mattapan</a></li>
+            <li class="item"><a href="Mission_Hill.html">Mission Hill</a></li>
+            <li class="item"><a href="North_End.html">North End</a></li>
+            <li class="item"><a href="Roslindale.html">Roslindale</a></li>
+            <li class="item"><a href="Roxbury.html">Roxbury</a></li>
+            <li class="item"><a href="South_Boston.html">South Boston</a></li>
+            <li class="item"><a href="South_End.html">South End</a></li>
+            <li class="item"><a href="West_End.html">West End</a></li>
+            <li class="item"><a href="West_Roxbury.html">West Roxbury</a></li>
+            <li class="item"><a class="active" href="Wharf_District.html">Wharf District</a></li>
+          </ul>
+      
+        </nav>
+      
+        <main>
+      
+          <h1>Top Rated Restaurants in Wharf District
+            <div>
+              <button type="button" class="button2">Collapse All</button>
+              <button type="button2" class="button2">Expand All</button>
+            </div>
+          </h1>
+
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Wharf_District/Chart.jpg); background-position: 50% 45%; background-size: 520px"> 
+                <h2>#1 Chart House</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content" style="align-items: flex-start;">
+                <ul class="info">
+                  <li><b>Seafood, Steakhouse</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Sunday-Thursday:</b></li>
+                      <li><i>11:30AM - 9PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Friday-Saturday:</b></li>
+                      <li><i>11:30AM - 10PM</i></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="info">
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-227-1576</i></li>
+                  <li><a href="https://www.chart-house.com/location/chart-house-boston-ma/">Chart House Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/chart-house-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/chart-house-restaurant-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe class="large_map"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=chart-house,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+          <header class="collapsible" style="background-image: url(../images/Wharf_District/Legal.jpg); background-position: center; background-size: 425px"> 
+                <h2>#2 Legal Sea Foods</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Everyday:</b></li>
+                      <li><i>12PM - 9PM</i></li>
+                    </ul>
+                  </li> 
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-742-5300</i></li>
+                  <li><a href="https://www.legalseafoods.com/restaurants/boston-long-wharf-63">Legal Sea Foods Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/legal-sea-foods-boston-38">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/legal-sea-foods-long-wharf-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=legal-sea-foods-boston-38,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Wharf_District/PastaBeach.jfif); background-position: 50% 50%; background-size: 625px"> 
+                <h2>#3 Pasta Beach</h2>
+                <span>Italian</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Italian, Pizza</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <ul>
+                        <li style="margin-bottom: 5px;"><b>Sunday-Thursday:</b></li>
+                        <li><i>11:30AM - 10PM</i></li>
+                        <li style="margin-bottom: 5px;"><b>Friday-Satuday:</b></li>
+                        <li><i>11:30AM - 11PM</i></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li><b><u>Phone</u></b></li>
+                  <li><i>617-439-6900</i></li>
+                  <li><a href="https://www.pastabeach.com/boston">Pasta Beach Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/pasta-beach-boston">Yelp Reviews</a></li>
+                  <li><i>Call for Reservations</i></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=pasta-beach-boston,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+          <div class="flex-grid">
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Wharf_District/StateSt.jpg);background-position: center; background-size: 630px"> 
+                <h2>#4 State Street Provisions</h2>
+                <span>American</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>American, Bar</b></li>
+                  <li style="color: lightgray;"><b>$$</b>$$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Thursday-Friday:</b></li>
+                      <li><i>4PM - 9PM</i></li>
+                      <li style="margin-bottom: 5px;"><b>Saturday-Sunday:</b></li>
+                      <li><i>10AM - 9PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-863-8363</i></li>
+                  <li><a href="https://statestreetprovisions.com/">State Street Provisions Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/state-street-provisions-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/r/state-street-provisions-boston"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=state-street-provisions-boston,oston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+            <div>
+              <header class="collapsible" style="background-image: url(../images/Wharf_District/Rowes.jpg);background-position: 90% 50%; background-size: 355px"> 
+                <h2>#5 Rowes Wharf Sea Grille</h2>
+                <span>Seafood</span>
+              </header>
+              <div class="content">
+                <ul class="info">
+                  <li><b>Seafood</b></li>
+                  <li style="color: lightgray;"><b>$$$</b>$</li>
+                  <li>
+                    <ul>
+                      <li style="margin-bottom: 5px;"><b>Everyday:</b></li>
+                      <li><i>6:30AM - 9:30PM</i></li>
+                    </ul>
+                  </li>
+                  <li style="margin: 2px;"><b><u>Phone</u></b></li>
+                  <li><i>617-856-7744</i></li>
+                  <li><a href="https://www.roweswharfseagrille.com/">Rowes Wharf Sea Grille Website</a></li>
+                  <li><a href="https://www.yelp.com/biz/rowes-wharf-sea-grille-boston">Yelp Reviews</a></li>
+                  <li><a href="https://www.opentable.com/rowes-wharf-sea-grille"><i>Reservations</i></a></li>
+                </ul>
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuLXlg1MyoDy0sf9IU2jSfOabfT97-ANU
+                    &q=rowes-wharf-sea-grille,Boston,MA" allowfullscreen>
+                </iframe>
+              </div>  
+            </div>
+          </div>
+      
+        </main>
+      
+      </div>
+  </body>
+</html>
